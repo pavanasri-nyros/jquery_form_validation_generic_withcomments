@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Event registeration form</title>
+</head>
+<body>
+
+     <!--Displaying the image-->
+     <div class="container-fluid ">
+            <img src="img/gogl.jpg" alt="" class = "backimage">
+         </div>
+    <div class="container">
+
+        <form>
+
+                <hr class="new5">
+                <h2 class="display-6 mt-5 ">Event registration</h2>
+                    <div class="mt-4 mb-5 font">
+                        Event Timing:February 4th -6th,2020
+                        <br>
+                        Event Address:123 your street your city, ST 12345
+                        <br>
+                        contact us at(123) 456-877890 or
+                        <a href="#" style="text-decoration: underline;"> no-reply@example.com</a>
+                    </div>
+                <p class="text-danger font mb-4">* Required</p>
+    
+    
+             <!--Firstname-->
+                <div class="form-group">
+                    <label for="" class = "label-font">First name<span class = "text-danger">*</span></label>
+                    <input type="text" class="form-control" required = "true" max="50" min="2" placeholder="Your answer">
+                  </div>
+
+
+            <!--lastname-->
+                  <div class="form-group">
+                    <label for="" class = "label-font">Last name<span class = "text-danger">*</span></label>
+                    <input type="text" class="form-control"  required = "true" max="50" min="2" placeholder="Your answer">
+                  </div>
+
+            <!--Email -->
+                 <div class="form-group">
+                  <label for="exampleInputEmail1" class = "label-font">Email address<span class = "text-danger">*</span></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required="true"  placeholder="Your answer">
+                </div>
+
+            <!--Phone number-->
+
+                <div class="form-group ">
+                    <label for="example-tel-input" class = "label-font">Mobile number<span class = "text-danger">*</span></label>
+                    <input class="form-control" type="tel" value="" id="example-tel-input"  required = "true" placeholder="Enter the mobile number">
+                  
+                </div>
+
+            <!--Drop downs-->
+
+            <div class="form-group">
+                    <label for=""class = "label-font"> Select the city</label>
+                        <select class="form-control">
+                           <option>None</option>
+                           <option> Kakinada</option>
+                           <option>Hyderabad</option>
+                         </select>
+            </div>
+
+
+
+                <!--Checkboxes-->
+                <div class="form-group">
+                    <label for="" class = "label-font">Days</label>
+                    <div class="form-check">
+                       <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                       <label class="form-check-label" for="inlineCheckbox1">Day 1</label>
+                     </div>
+                     <div class="form-check">
+                       <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                       <label class="form-check-label" for="inlineCheckbox2">Day 2</label>
+                     </div>
+                     <div class="form-check">
+                       <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                       <label class="form-check-label" for="inlineCheckbox3">Day 3</label>
+                     </div>
+                </div>
+
+               
+
+                <!--Radio buttons-->
+
+                <div class="form-group">
+
+                       <label for="" class = "label-font">Dish details</label>
+                        <div class="form-check ">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                           <label class="form-check-label" for="inlineRadio1">None</label>
+                         </div>
+                         <div class="form-check ">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">Vegetarian</label>
+                         </div>
+                         <div class="form-check ">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                           <label class="form-check-label" for="inlineRadio3">Non Vegetarian</label>
+                         </div>
+                </div>
+
+              
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+    </div>
+    <script  src = "script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
